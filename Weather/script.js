@@ -63,15 +63,13 @@
          let map = document.getElementById("gmap_canvas")
          container.innerHTML = null
 
-        //  let pic = document.createElement("img")
-        //  pic.src = "https://nordicapis.com/wp-content/uploads/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png"
+    
          
          let city = document.createElement('h2')
          city.innerText =  `City: ${data.name}`
 
          let min = document.createElement("p")
          min.innerHTML = '<i class="fa-solid fa-temperature-low"></i> ' + `Min temp: ${data.main.temp_min}` + " °C"
-        //  min.innerText = `Min temp: ${data.main.temp_min}` + " °C"
 
          let max = document.createElement("p")
          max.innerHTML = '<i class="fa-solid fa-temperature-high"></i> ' + `Max temp: ${data.main.temp_max}` + " °C"
@@ -92,9 +90,7 @@
          let suns = document.createElement("p")
          suns.innerHTML = '<i class="fa-solid fa-cloud-sun"></i> ' + `Sun Set: ${(data.sys.sunset)/360000000}` + " hrs"
 
-        //  let image = document.createElement("img")
-        //  image.src = "https://weather.ls.hereapi.com/static/weather/icon/4.png"
-        //  image.setAttribute("class", "image")
+        
 
           
          container.append( city, min, max, curr, humi, speed, sunr, suns)
