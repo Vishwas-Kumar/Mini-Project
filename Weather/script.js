@@ -70,27 +70,27 @@
          city.innerText =  `City: ${data.name}`
 
          let min = document.createElement("p")
-         min.innerHTML = '<i class="fa-solid fa-temperature-arrow-down"></i>'
-         min.innerText = `Min temp: ${data.main.temp_min}` + " °C"
+         min.innerHTML = '<i class="fa-solid fa-temperature-low"></i> ' + `Min temp: ${data.main.temp_min}` + " °C"
+        //  min.innerText = `Min temp: ${data.main.temp_min}` + " °C"
 
          let max = document.createElement("p")
-         max.innerText = `Max temp: ${data.main.temp_max}` + " °C"
+         max.innerHTML = '<i class="fa-solid fa-temperature-high"></i> ' + `Max temp: ${data.main.temp_max}` + " °C"
 
          let curr = document.createElement("p")
-         curr.innerText = `Current temp: ${data.main.temp}` + " °C" 
+         curr.innerHTML = '<i class="fa-solid fa-temperature-half"></i> ' + `Current temp: ${data.main.temp}` + " °C"
          
 
          let humi = document.createElement("p")
-         humi.innerText = `Humidity: ${data.main.humidity}` + " %"
+         humi.innerHTML = '<i class="fa-solid fa-droplet"></i> ' + `Humidity: ${data.main.humidity}` + " %"
 
          let speed = document.createElement("p")
-         speed.innerText = `Wind Speed: ${data.wind.speed}` + " Km/h"
+         speed.innerHTML = '<i class="fa-solid fa-wind"></i> ' + `Wind Speed: ${data.wind.speed}` + " Km/h"
 
          let sunr = document.createElement("p")
-         sunr.innerText = `Sun Rise: ${(data.sys.sunrise)/360000000}` + " hrs"
+         sunr.innerHTML = '<i class="fa-solid fa-cloud-sun"></i> ' + `Sun Rise: ${(data.sys.sunrise)/360000000}` + " hrs"
 
          let suns = document.createElement("p")
-         suns.innerText = `Sun Set: ${(data.sys.sunset)/360000000}` + " hrs"
+         suns.innerHTML = '<i class="fa-solid fa-cloud-sun"></i> ' + `Sun Set: ${(data.sys.sunset)/360000000}` + " hrs"
 
         //  let image = document.createElement("img")
         //  image.src = "https://weather.ls.hereapi.com/static/weather/icon/4.png"
