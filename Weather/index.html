@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        display: flex;
+        grid-template-columns: repeat(2, );
+        gap: 60px;
+    }
+    #container{
+        display: grid;
+        /* margin: auto; */
+        margin-left: 50px;
+        margin-top: 50px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        text-align:left;
+        justify-content: center;
+        height: 450px;
+        width: 40%;
+    }
+    img{
+        height: 500px;
+        width: 225%;
+    }
+    .mapouter{
+        margin-top: 20px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        height: 400px;
+        width: 40%;
+    }
+    #city {
+        width: 40%;
+        height: 40px;
+        border-radius: 10px;
+    }
+    button{
+        height: 45px;
+        width: 20%;
+        border-radius: 10px;
+    }
+    #city:hover{
+        color: red;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* font-size: 15px; */
+         border: 2px solid teal;
+    }
+    
+</style>
+<body>
+<center>
+    <button  onclick="getWeather()">Get Current Location
+    </button>
+
+
+    <input type="text" id="city" placeholder="Enter City Name">
+    <button  onclick="getData()" id="submit"  type="submit">Submit</button>
+</center>
+<div id="box">
+    <div id="container">
+        <!-- <img src="https://nordicapis.com/wp-content/uploads/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png" alt=""> -->
+        <img src="https://kashmirpatriot.com/wp-content/uploads/2021/03/weather-forecast-fb-1.jpg" alt="">
+    </div>
+
+    <div class="mapouter">
+       
+        <div class="gmap_canvas">
+            
+            <iframe 
+            width="600" 
+            height="500" 
+            id="gmap_canvas" 
+
+            
+            
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0">
+        </iframe>
+        <a href="https://www.whatismyip-address.com"></a>
+        <br>
+        <style>
+        .mapouter{
+            position:relative;
+            text-align:right;
+            height:500px;
+            width:600px;
+        }
+        </style>
+        <a href="https://www.embedgooglemap.net">google maps web pages</a>
+        <style>
+        .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:600px;
+        }
+        </style>
+         
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
+<script src="script.js"></script>
