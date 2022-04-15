@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+<style>
+  button a{
+    text-decoration: none;
+    color: black;
+  }
+ 
+</style>
+  <body>
+    <div id="menu">
+      
+      <button id="show_products" > <a href="products.html"> Show Products</a></button>
+     
+    </div>
+    <div>
+      <h2>Products are .....</h2>
+      
+         <form onsubmit="storeProducts(event)" id="products">
+      
+     
+      <input type="text" id="name" placeholder=" Product name"><br><br>
+
+      <input type="text" id="category" placeholder="Category"><br><br>
+      
+      <input type="text" id="image" placeholder="Image URL"><br><br>
+
+      <input type="number" id="price"  placeholder="Price"><br><br>
+
+      <select id="gender">
+          <option value="Male">MALE</option>
+          <Option value="Female">FEMALE</Option>
+      </select><br><br>
+      
+      <input type="submit" id="add" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="index.js"></script>

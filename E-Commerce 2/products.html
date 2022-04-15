@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    button a{
+      text-decoration: none;
+      color: black;
+    }
+    #product{
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    img{
+        height: 300px;
+        width: 300px;
+    }
+    #menu{
+        display: flex;
+        gap: 20px;
+    }
+    #add_product{
+        height: 30px;
+    }
+    #counter{
+        margin-top: -30px;
+    }
+    
+  </style>
+
+  <body>
+    <div id="menu">
+      
+      
+      <button id="add_product" > <a href="index.html"> Add Products</a></button>
+
+      <h2 id="counter"></h2>
+    </div>
+    <div id="product">
+      <!--append all products data here in grid format-->
+      
+
+    </div>
+  </body>
+</html>
+
+<script src="products.js"></script>
